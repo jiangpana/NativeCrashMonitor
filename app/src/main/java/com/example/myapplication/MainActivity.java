@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Example of a call to a native method
         TextView tv = binding.sampleText;
-        tv.setText(stringFromJNI());
+        tv.setText(initNativeCrash());
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,6 +39,6 @@ public class MainActivity extends AppCompatActivity {
      * A native method that is implemented by the 'myapplication' native library,
      * which is packaged with this application.
      */
-    public native String stringFromJNI();
+    public native String initNativeCrash();
     public native void testCrash();
 }

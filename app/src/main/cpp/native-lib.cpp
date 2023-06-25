@@ -12,7 +12,7 @@
 
 
 extern "C" JNIEXPORT jstring JNICALL
-Java_com_example_myapplication_MainActivity_stringFromJNI(
+Java_com_example_myapplication_MainActivity_initNativeCrash(
         JNIEnv *env,
         jobject /* this */) {
     std::string hello = "Hello 安装完成";
